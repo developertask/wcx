@@ -154,6 +154,7 @@ public:
         // DNS Seeding
         vSeeds.push_back(CDNSSeedData("188.40.91.8", "188.40.91.8"));
         vSeeds.push_back(CDNSSeedData("195.201.81.45", "195.201.81.45"));
+        vSeeds.push_back(CDNSSeedData("95.216.28.116", "95.216.28.116"));
 
         // WCXCOIN addresses start with 'G'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 38);
