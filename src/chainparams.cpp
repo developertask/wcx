@@ -53,7 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0a65142b7d4f32127004b72557dc212e601ebbaa1d9f76bdc34972b8c897a81c"));
+    (0, uint256("0x000004cdf3c3ff766285187d647933f1cb5201a06bde361a731d047800a1c139"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -119,7 +119,7 @@ public:
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
          *
-         * python ~/genesis.py -a quark-hash -z "Even With Energy Surplus, Canada Unable to Meet Electricity Demands of Bitcoin Miners" -t 1516926684 -v 0 -p 04e5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
+         * python ~/genesis.py -a quark-hash -z "Even With Energy Surplus, Canada Unable to Meet Electricity Demands of Bitcoin Miners" -t 1531041120 -v 0 -p 04e5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
          * 04ffff001d01042642544320426c6f636b20353031353932202d20323031372d31322d32392031353a34333a3337
          * algorithm: quark-hash
          * merkle hash: 07cbcacfc822fba6bbeb05312258fa43b96a68fc310af8dfcec604591763f7cf
@@ -145,10 +145,10 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1531041120;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 28;
+        genesis.nNonce = 491562;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0a65142b7d4f32127004b72557dc212e601ebbaa1d9f76bdc34972b8c897a81c"));
+        assert(hashGenesisBlock == uint256("0x000004cdf3c3ff766285187d647933f1cb5201a06bde361a731d047800a1c139"));
         assert(genesis.hashMerkleRoot == uint256("0x07cbcacfc822fba6bbeb05312258fa43b96a68fc310af8dfcec604591763f7cf"));
 
         // DNS Seeding
