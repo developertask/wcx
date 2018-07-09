@@ -109,7 +109,7 @@ public:
         nTargetSpacing = 2 * 60;  // WCXCOIN: 2 minutes
         nMaturity = 10;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 21000000 * COIN;
+        nMaxMoneyOut = 31000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
